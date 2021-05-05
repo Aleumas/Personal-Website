@@ -1,6 +1,6 @@
 <svelte:head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;800&family=Spectral:wght@700&display=swap" rel="stylesheet">
 </svelte:head>
 
 <h1>Samuel <br> Asamoah</h1>
@@ -12,18 +12,18 @@ through code.</p>
 
 
 <style>
-
+ 
     h1 {
         color: white;
-        font-family: 'montserrat', bold;
-        font-size: 4em;
+        font-family: 'Spectral';
+        font-weight: 700;
+        font-size: 5em;
+        line-height: 1em;
         margin-bottom: 5%;
-        padding-top: 30%;
     }
 
     p {
         color: white;
-        font-family: 'montserrat';
         font-weight: 300;
         width: 50%;
         font-size: 1em;
@@ -32,12 +32,14 @@ through code.</p>
     }
 
     button {
-        color: white;
-        font-family: 'montserrat';
-        font-weight: 300;
-        font-size: 1em;
-        margin-top: 0;
-        background-color: rgba(0, 0, 0, 0);
-        border-radius: 0;
+        color: rgb(27, 28, 34);
+        font-weight: 600;
+        font-size: 0.8em;
+        padding: 1em;
+        padding-left: 1em;
+        padding-right: 1em;
+        margin-right: 7%;
+        margin-bottom: 5%;
+        border-radius: 15px;
     }
 </style>
