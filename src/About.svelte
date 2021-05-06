@@ -1,15 +1,43 @@
+
 <svelte:head>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;800&family=Spectral:wght@700&display=swap" rel="stylesheet">
+    <script>
+        
+        "use strict";
+		(function(){
+			var cursor = document.querySelector('.cursor');
+			var links = document.querySelectorAll('a');
+
+			var editCursor = function editCursor(event) {
+				cursor.style.top = event.pageY + 'px';
+				cursor.style.left = event.pageX + 'px';
+			}
+
+			window.addEventListener('mousemove', editCursor);
+		})();
+
+        
+    </script>
+
+
 </svelte:head>
+
+<script>
+
+    function test() {
+        console.log("Yess Sirr");
+    }
+
+</script>
+
 
 <h1>Samuel <br> Asamoah</h1>
 <p>Self-taught graphic designer and programmer who has recently graduated high-school.
 Committed to learning, creating, and utilizing my skills in the service of others in need.
 Experienced at developing innovative ideas through design and materializing these ideas
 through code.</p>
-<button>Get In Touch</button>
-
+<button on:click={test} class="touch">Get In Touch</button>
 
 <style>
  
@@ -19,7 +47,9 @@ through code.</p>
         font-weight: 700;
         font-size: 5em;
         line-height: 1em;
-        margin-bottom: 5%;
+        margin-top: 0;
+        margin-bottom: 10px;
+        padding-top: 1em;
     }
 
     p {
@@ -32,14 +62,36 @@ through code.</p>
     }
 
     button {
-        color: rgb(27, 28, 34);
-        font-weight: 600;
+        color: white;
+        font-weight: 500;
         font-size: 0.8em;
         padding: 1em;
         padding-left: 1em;
         padding-right: 1em;
-        margin-right: 7%;
+        margin-right: 3%;
         margin-bottom: 5%;
         border-radius: 15px;
+        border-width: 0px;
+        background-color: rgba(0, 0, 0, 0);
+        -webkit-transition: ease-out 0.4s;
+        -moz-transition: ease-out 0.4s;
+        transition: ease-out 0.4s;
     }
+
+    button:hover {
+        color: white;
+    }
+
+    .skills:hover {
+        box-shadow: inset 0 0 0 50px #377dff;
+    }
+    .projects:hover {
+        box-shadow: inset 0 0 0 50px #ff7337;
+    }
+    .touch:hover {
+        box-shadow: inset 0 0 0 50px #782381;
+    }
+    .resume:hover {
+        box-shadow: inset 0 0 0 50px #16a711;
+    }    
 </style>
