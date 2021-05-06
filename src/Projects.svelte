@@ -3,7 +3,7 @@
     import Color from './Color.svelte';
 </script>
 
-<h1>Projects</h1>
+<h1><a id="projects">Projects</a></h1>
 <div class="project-container">
     <div class="project-item">
         <div class="color"><Color/></div>
@@ -12,11 +12,12 @@
             <p class="project-information">
                 An animal spotting app for kids to make family safari trips fun.
             </p>
-        </div>
+        
        <p class="project-technology">
             Swift
         </p>
         <button class="learn-more">Learn more</button>
+        </div>
     </div>
 
     <div class="project-item">
@@ -48,6 +49,11 @@
 
 
 <style>
+    a {
+        color:white;
+        text-decoration: none;
+    }
+
 
     h1 {
         color: white;
@@ -83,7 +89,7 @@
         border-radius: 10px;
         width: 300px;
         height: 300px;
-        transition: transform .5s ease;
+        /*transition: transform .5s ease;*/
         margin-bottom: 2em; 
         overflow: hidden;
         display: initial;
@@ -103,8 +109,8 @@
         display: block;
     }
 
-    .project-item:hover {
-        transform: scale(1.1);
+    .project-item:not(.color):hover {
+        transform: translateY(-10px) scale(1.1) ;
     }
 
     .project-technology {

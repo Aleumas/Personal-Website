@@ -61,17 +61,17 @@
     }
 
     @keyframes dot-animation {
-  0% {
-    transform: translate(0, 0);
+      0% {
+        transform: translate(0, 0);
+      }
+      33% {
+        transform: translate(calc(var(--size) / 1.5), 0);
+      }
+      66% {
+        transform: translate(0, calc(var(--size) / 1.5));
+      }
+      100% {
+        transform: translate(0, 0);
+      }
   }
-  33% {
-    transform: translate(calc(var(--size) / 1.5), 0);
-  }
-  66% {
-    transform: translate(0, calc(var(--size) / 1.5));
-  }
-  100% {
-    transform: translate(0, 0);
-  }
-}
 </style>
