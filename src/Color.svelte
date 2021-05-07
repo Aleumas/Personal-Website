@@ -1,7 +1,6 @@
 
 
 <div class="animatedwrapper">
-    
     <div class="dot dot--one"></div>
     <div class="dot dot--two"></div>
     <div class="dot dot--three"></div>
@@ -22,7 +21,7 @@
         transition-timing-function: ease-out; 
     }
     .dot {
-        --size: 700px;
+        --size: 400px;
         display: none;
         position: absolute;
         left: calc(var(--size) / 3 * -1);

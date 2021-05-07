@@ -16,7 +16,7 @@
        <p class="project-technology">
             Swift
         </p>
-        <button class="learn-more">Learn more</button>
+        <button class="learn-more"><a href="./Spy">Learn more</a></button>
         </div>
     </div>
 
@@ -49,8 +49,13 @@
 
 
 <style>
-    a {
+    h1 a {
         color:white;
+        text-decoration: none;
+    }
+
+    button a {
+        color: rgb(27, 28, 34);
         text-decoration: none;
     }
 
@@ -92,6 +97,7 @@
         /*transition: transform .5s ease;*/
         margin-bottom: 2em; 
         overflow: hidden;
+        cursor: url('red.png');
         display: initial;
     }
 
@@ -110,7 +116,7 @@
     }
 
     .project-item:not(.color):hover {
-        transform: translateY(-10px) scale(1.1) ;
+        transform: scale(1.1) ;
     }
 
     .project-technology {
@@ -128,10 +134,11 @@
     .glass {
         width:100%;
         height: 100%;
-        background: linear-gradient(135deg, rgba( 255, 255, 255, 0.15), rgba( 255, 255, 255, 0.1)) ;
-        box-shadow: 0 8px 32px 0 rgb(27, 28, 34);
+        background: linear-gradient(135deg, rgba( 255, 255, 255, 0.15), rgba( 255, 255, 255, 0.1));
         border: 1px solid rgba( 255, 255, 255, 0.18 );
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(40px);
+        box-shadow: rgb(0 0 0 / 25%) 0px 40px 80px, rgb(255 255 255 / 15%) 0px 0px 0px 0.5px inset;
+        background-image: (linear,left top,left bottom,color-stop(10%,#000),to(rgba(0,0,0,.6))),url('./noise.jpg');
     }
 
     .learn-more {
