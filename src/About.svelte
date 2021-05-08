@@ -3,7 +3,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;800&family=Spectral:wght@700&display=swap" rel="stylesheet">
     <script>
-        
 
         // Smooth Scrolling 
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -16,14 +15,25 @@
             });
         }); 
 
+
+        // Cursor
+         "use strict";
+		(function(){
+			var cursor = document.querySelector('.cursor');
+			var links = document.querySelectorAll('a');
+			var editCursor = function editCursor(event) {
+				cursor.style.top = event.pageY - 15 + 'px';
+				cursor.style.left = event.pageX + 'px';
+			}
+			window.addEventListener('mousemove', editCursor);
+		})();
+
     </script>
 
 
 </svelte:head>
 
 <script>
-
-    let src = "down.svg"
 </script>
 
 <div class="hero-section">
@@ -34,8 +44,12 @@
         Experienced at developing innovative ideas through design and materializing these ideas
         through code.</p>
     </div>
+
 </div>
-<img src="scroll.svg" alt="Scroll to see more" class="scroll">
+<div class="scroll-position">
+    <img src="scroll.svg" alt="Scroll to see more" class="scroll">
+    <img src="down.svg" alt="Scroll to see more" class="down">
+</div>
 
 <style>
     .scroll {
@@ -45,10 +59,33 @@
         height: 20vh;
         margin-left: auto;
         margin-right: auto;
-        margin-top: -20vh;
+        transition: ease-in-out 0.4s;
         animation: rotation 10s infinite linear;
     }
+
+    .scroll-position {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -20vh;
+    }
     
+    .scroll:hover ~ .down{
+        opacity: 1;
+    }
+
+    .down {
+        display:block;
+        position: relative;
+        width: 4vh;
+        height: 4vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -12vh;
+        opacity: 0;
+        z-index: -10;
+        transition: ease-out 0.4s;
+    }
+
     .hero-section {
         height: 100vh;
         width: 100%;
@@ -67,8 +104,7 @@
         font-size: 5em;
         line-height: 1em;
         margin-top: 0;
-        margin-bottom: 10px;
-        cursor: url("down.png"), auto, zoom-in;
+        margin-bottom: 0.3em;
     }
 
     p {
@@ -78,6 +114,7 @@
         font-size: 1em;
         margin-top: 0;
         margin-bottom: 5%;
+        line-height: 2em;
     }
 
     button {
@@ -105,4 +142,5 @@
             transform: rotate(359deg);
         }
     }
+
 </style>

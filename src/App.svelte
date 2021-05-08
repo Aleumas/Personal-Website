@@ -13,8 +13,8 @@
 	}, () => page = Spy);
 
 	Router.start();
+
 </script>
 
-<div id="custom-cursor-second" class="custom-cursor-second" style="position: absolute; pointer-events: none;"></div>
 
 <svelte:component this={page} {params}/>

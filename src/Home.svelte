@@ -8,6 +8,7 @@
 	<li><a>Skills</a></li>
 	<li><a href="#projects">Projects</a></li>
 </ul>
+<div class="cursor"></div>
 <About/>
 <Projects/>
 
@@ -20,6 +21,7 @@
 		padding: 0;
 		font-style: normal;
 		padding-left: 2em;
+		cursor: none;
 	}
 
 	h3 {
@@ -61,6 +63,7 @@
 		text-align: center;
 		padding: 14px 16px;
 		text-decoration: none;
+		cursor: none;
 		
 	}
 
@@ -90,14 +93,21 @@
 		margin-bottom: -20px;
 	}
 
-	.center {
-		margin: 0;
+	.cursor {
+		width: 20px;
+		height: 20px;
+		border-radius: 50%;
 		position: absolute;
-		top: 50%;
-		left: 50%;
-		-ms-transform: translate(-50%, -50%);
-		transform: translate(-50%, -50%);
+		transform: translate3d(-50%, -50%, 0);
+		top: 0;
+		left: 0;
+		background-color: white;
+		pointer-events: none;
+		z-index: 100;
+		transition-duration: 50ms;
+		transition-timing-function: ease-out;
 	}
+
 
 	@keyframes transform {
 			0%,
