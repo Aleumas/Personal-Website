@@ -6,8 +6,7 @@
 <h1><a id="projects">Projects</a></h1>
 <div class="project-container">
     <div class="project-item">
-        <div class="color"><Color/></div>
-        <div class="glass">
+        <div class="background">
             <h2>I Spy Safari</h2>
             <p class="project-information">
                 An animal spotting app for kids to make family safari trips fun.
@@ -21,8 +20,7 @@
     </div>
 
     <div class="project-item">
-        <div class="color"><Color/></div>
-        <div class="glass">
+        <div class="background">
             <h2>Community <br> Cooker Website</h2>
             <p class="project-information">
                 The Community Cooker Foundation is a Kenyan based charity that promotes sustainable waste management.
@@ -87,6 +85,7 @@
     .project-container {
         grid-template-columns: auto auto auto;
         display: grid;
+        cursor: none;
     }
 
     .project-item {
@@ -96,9 +95,9 @@
         height: 300px;
         /*transition: transform .5s ease;*/
         margin-bottom: 2em; 
-        overflow: hidden;
-        cursor: url('red.png');
+        cursor: none;
         display: initial;
+        transition: 0.4s;
     }
 
     .hidden {
@@ -117,6 +116,14 @@
 
     .project-item:not(.color):hover {
         transform: scale(1.1) ;
+    }
+
+    .background {
+        width:100%;
+        height: 100%;
+        border-radius: 10px;
+        border: 2px solid rgb(22, 22, 27);
+        background-color: rgb(22, 22, 27);
     }
 
     .project-technology {
@@ -154,5 +161,6 @@
         position: absolute;
         bottom: 0;
         right: 0;
+        cursor: none;
     }
 </style>

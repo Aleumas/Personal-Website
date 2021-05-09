@@ -2,17 +2,19 @@
 	import About from './About.svelte';
 	import Projects from './Projects.svelte';
 </script>
-
 <ul>
-	<li><a>Resume</a></li>
-	<li><a>Skills</a></li>
+	<li><a href="Resume-Final.pdf" download>Resume</a></li>
 	<li><a href="#projects">Projects</a></li>
 </ul>
 <div class="cursor"></div>
+
+
 <About/>
 <Projects/>
 
 <style>
+
+	
 
     :global(body) {
         background-color: rgb(27, 28, 34);

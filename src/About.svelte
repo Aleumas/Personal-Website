@@ -36,7 +36,7 @@
 <script>
 </script>
 
-<div class="hero-section">
+<div class="hero-section load">
     <div class="center">
     <h1>Samuel <br> Asamoah</h1>
         <p>Self-taught graphic designer and programmer who has recently graduated high-school.
@@ -52,6 +52,9 @@
 </div>
 
 <style>
+    .load {
+        animation: load 1.5s;
+    }
     .scroll {
         display:block;
         position: relative;
@@ -71,6 +74,19 @@
     
     .scroll:hover ~ .down{
         opacity: 1;
+    }
+
+    @keyframes load {
+
+        from  {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     .down {
