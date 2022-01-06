@@ -1,6 +1,6 @@
 
 <svelte:head>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="western universitypreconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300;400;500;800&family=Spectral:wght@700&display=swap" rel="stylesheet">
     <script>
 
