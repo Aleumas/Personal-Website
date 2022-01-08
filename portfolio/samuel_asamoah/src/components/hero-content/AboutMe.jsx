@@ -7,7 +7,7 @@ function AboutMe(props) {
             <div className='my-info-container'>
                 <div>
                     <h1 className={ props.theme + ' spectral header' }>Hi, I am <br/> Samuel Asamoah</h1>
-                    <p className={ props.theme + ' roboto-mono header-description' }>I am a software developer who values robust and <br/>scalable solutions to complex problems.</p>
+                    <p className={ props.theme + ' roboto-mono header-description' }> A software developer who enjoys designing <br/> efficient solutions to emerging problems.</p>
                 </div>
                 <Socials theme={props.theme}/>
             </div>
