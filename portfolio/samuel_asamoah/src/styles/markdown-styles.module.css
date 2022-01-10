@@ -1,0 +1,28 @@
+.reactMarkDown p, li, h2 {
+    	font-family: 'Roboto Mono', monospace;
+}
+
+.reactMarkDown h1 {
+	font-size: 3rem;
+	margin-bottom: 0px;
+	line-height: 3rem;
+}
+
+.reactMarkDown a {
+	color: #1973F5;
+	font-weight: 600;
+}
+
+.reactMarkDown img {
+	max-width: 45vw;
+	max-height: 45vh;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.reactMarkDown h4 {
+    	font-family: 'Roboto Mono', monospace;
+	text-align: center;
+	font-weight: 500;
+}

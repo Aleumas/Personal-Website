@@ -148,6 +148,7 @@ html, body {
     display: flex;
     align-items: center;
     gap: 0.5em;
+    margin-top: 5vh;
 }
 
 .project-name {
@@ -174,6 +175,8 @@ html, body {
     font-weight: 600;
     font-size: 1em;
     margin-bottom: 10vh;
+    display: flex;
+    align-items: center;
 }
 
 .arrow {
@@ -188,7 +191,8 @@ html, body {
 }
 
 .section-1 {
-    height: 100vh;
+    min-height: 100vh;
+    padding-bottom: 5vh;
 }
 
 .section-2 {
