@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksamuel_asamoah=self.webpackChunksamuel_asamoah||[]).push([[838],{838:function(a,s,e){a.exports=e.p+"static/media/I_Spy_Safari.48b3f614891c29940214.md"}}]);

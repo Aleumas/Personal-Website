@@ -18,10 +18,10 @@ There were seven beta releases involving consistent communication between the th
 - Track seen animals
 - Manage previous trips
 
-Sudra and a couple of other teachers tested the app in the Nairobi National Park with their children. Their testing raised constructive feedback: which led to many functional and cosmetic improvements. 
+Sudra and a couple of other teachers tested the app at the Nairobi National Park with their children. Their testing raised constructive feedback: which led to many functional and cosmetic improvements. 
 
 
-![Alt='Text'](/Portfolio/static/media/ISS_feedback.869f40907e52c81f6d64.jpeg "sdafsdfas")
+![](/Portfolio/static/media/ISS_feedback.869f40907e52c81f6d64.jpeg)
 #### Fig. Feedback from one of the teacher's children
 
 ## Conclusion 
