@@ -13,14 +13,16 @@ import {
 } from "react-router-dom";
 
 const rootElement = document.getElementById('root')
+
 ReactDOM.render(
   <BrowserRouter>
-    <Routes>
-      <Route path='/Portfolio' element={<App/>} />
-      <Route path='Blog' element={<div><Outlet/></div>}> 
-        <Route path=':post' element={<Post/>}/>
-      </Route>
-    </Routes>
+      <Routes>
+        <Route path='/Portfolio' element={<App/>}>
+          <Route path='Blog' exact element={<div><Outlet/></div>}> 
+            <Route path=':post' exact element={<Post/>}/>
+          </Route>
+        </Route>
+      </Routes>
   </BrowserRouter>,
   rootElement
 );
