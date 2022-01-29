@@ -4,7 +4,7 @@ import Background from './components/Background'
 import AboutMe from './components/hero-content/AboutMe';
 import Project from './components/Projects';
 import { ThemeContext } from './theme-context'
-import { Outlet, useParams } from 'react-router-dom';
+import { Outlet, useParams, useLocation } from 'react-router-dom';
 
 function App() {
 
@@ -33,7 +33,7 @@ function App() {
     );
 
     return (
-      (Object.keys(params).length == 0) ? home : <Outlet/>
+      (useLocation().pathname == '/Portfolio') ? home : <Outlet/>
     );
 }
 
