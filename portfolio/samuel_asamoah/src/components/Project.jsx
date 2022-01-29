@@ -27,7 +27,7 @@ function Project(props) {
 			</div>
 			<p className='roboto-mono project-summary'>{props.summary}</p>
 			{(props.link_type=='project') && (<a target='_blank' rel='noopener' className={props.theme + ' explore roboto-mono'} href={props.link}>Explore project<img className='arrow' src={Explore}/></a>)} 
-			{(props.link_type=='blog') && (<a id={props.id} onClick={() => changePost(props.name)} className={props.theme + ' explore roboto-mono'}>Read blog<img className='arrow' src={Explore}/></a>)}
+			{(props.link_type=='blog') && (<a id={props.id} onClick={() => changePost(props.name)} className={props.theme + ' explore roboto-mono'}>Read post<img className='arrow' src={Explore}/></a>)}
 		</div>
 
 	);
