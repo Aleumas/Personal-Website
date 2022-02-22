@@ -7,7 +7,7 @@ import Blog from './Blog';
 import Require from './Public/Post_Images/require';
 
 import {
-  BrowserRouter,
+  HashRouter,
   Routes,
   Route,
 } from "react-router-dom";
@@ -15,7 +15,7 @@ import {
 const rootElement = document.getElementById('root');
 
 ReactDOM.render(
-  <BrowserRouter>
+  <HashRouter>
       <Routes>
         <Route path='/Portfolio' element={<App/>}>
           <Route path='Blog' exact element={<Blog/>}> 
@@ -23,6 +23,6 @@ ReactDOM.render(
           </Route>
         </Route>
       </Routes>
-  </BrowserRouter>,
+  </HashRouter>,
   rootElement
 );
