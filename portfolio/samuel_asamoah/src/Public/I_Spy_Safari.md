@@ -4,7 +4,7 @@
 
 My design technology teacher (Sudra) expressed frustration with this simple problem: his children got bored traveling on safari trips. Sudra explained that he and two other teachers had been looking into creating an app to solve this problem. After graduating high school, I decided to develop this app out of curiosity. Little did I know, after showing Sudra what I had come up with, he would want me to continue the app's development. 
 
-![](/Portfolio/static/media/ISS_v1.b73a996bc17cd1162e23.png)
+![](/static/media/ISS_v1.b73a996bc17cd1162e23.png)
 #### Fig. One of Sudra's initial mockups
 
 ## Swift Changes
@@ -21,7 +21,7 @@ There were seven beta releases involving consistent communication between the th
 Sudra and a couple of other teachers tested the app at the Nairobi National Park with their children. Their testing raised constructive feedback: which led to many functional and cosmetic improvements. 
 
 
-![](/Portfolio/static/media/ISS_feedback.869f40907e52c81f6d64.jpeg)
+![](/static/media/ISS_feedback.869f40907e52c81f6d64.jpeg)
 #### Fig. Feedback from one of the teacher's children
 
 ## Conclusion 

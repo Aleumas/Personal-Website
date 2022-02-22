@@ -3,6 +3,8 @@
 	"name" : "Conference Manager",
 	"languages" : "React JS",
 	"summary" : "A CRUD based web application that enables conference managers can interact with prospective attendees.",
+	"is_blog": "false",
+	"blog_type": "",
 	"link_type": "project",
 	"link" : "https://conference-manager.vercel.app/"
 
@@ -11,8 +13,19 @@
 	"name" : "I Spy Safari",
 	"languages" : "Swift",
 	"summary" : "An educational game that teaches children about animals found within african wildlife parks and zoos.",
+	"is_blog": "true",
+	"blog_type": "project",
 	"link_type": "blog",
 	"link" : ""
 
+   },
+   {
+	"name" : "XOR",
+	"languages" : "None",
+	"summary" : "An exploration of XOR's meaning, properties, and applications.",
+	"is_blog": "true",
+	"blog_type": "informative",
+	"link_type": "blog",
+	"link" : ""
    }
 ]

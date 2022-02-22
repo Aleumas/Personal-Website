@@ -11,7 +11,7 @@ function Project(props) {
 	useEffect(() => {
 		if (post != undefined) {
 			const postExtention = post.replace(/ /g, "_");
-			navigate(`/Portfolio/Blog/${postExtention}`, { state: {
+			navigate(`/Blog/${postExtention}`, { state: {
 				theme: `${props.theme}`,
 				name:  `${post}` 
 			}});
