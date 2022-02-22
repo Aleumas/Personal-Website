@@ -1,5 +1,13 @@
 [
    {
+	"name" : "Conference Manager",
+	"languages" : "React JS",
+	"summary" : "A CRUD based web application that enables conference managers can interact with prospective attendees.",
+	"link_type": "project",
+	"link" : "https://conference-manager.vercel.app/"
+
+   },
+   {
 	"name" : "I Spy Safari",
 	"languages" : "Swift",
 	"summary" : "An educational game that teaches children about animals found within african wildlife parks and zoos.",
