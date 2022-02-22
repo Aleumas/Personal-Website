@@ -6,7 +6,7 @@ import Post from './Post';
 import Require from './Public/Post_Images/require';
 
 import {
-  HashRouter,
+  BrowserRouter,
   Routes,
   Route,
   Outlet
@@ -15,7 +15,7 @@ import {
 const rootElement = document.getElementById('root')
 
 ReactDOM.render(
-  <HashRouter>
+  <BrowserRouter>
       <Routes>
         <Route path='/Portfolio' element={<App/>}>
           <Route path='Blog' exact element={<div><Outlet/></div>}> 
@@ -23,6 +23,6 @@ ReactDOM.render(
           </Route>
         </Route>
       </Routes>
-  </HashRouter>,
+  </BrowserRouter>,
   rootElement
 );
