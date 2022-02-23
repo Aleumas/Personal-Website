@@ -8,14 +8,14 @@ If person A were to ask you: "Do you like hotdogs **or** hamburgers?"; you could
 
 1. A XOR B is true if and only if either A or B is true but not both.
 2. A XOR B represents the difference between A and B (i.e., where A differs from B, A XOR B is true).
-3. A_1 XOR A_2 ... XOR A_n = 1 if and only if the parity of set bits is odd.
+3. A_1 XOR A_2 ... XOR A_n = 1 if and only if the parity of set bits within the bit sequence is odd.
 
 ## Properties
 
 - Associativity: (A XOR B) XOR C = A XOR (B XOR C); i.e., the grouping of operations does not affect the result (first interpretation).
 - Commutativity: A XOR B = B XOR A; i.e., the order of terms does not affect the result (first interpretation).
 - Identity: A XOR 0 = A (second interpretation).
-Inverse: A XOR A = 0 (second interpretation).
+- Inverse: A XOR A = 0 (second interpretation).
 
 ## Applications 
 
