@@ -20,6 +20,16 @@
 
    },
    {
+	"name" : "Jamii Moja",
+	"languages" : "HTML CSS JS",
+	"summary" : "Jamii Moja is an intuitive and easy-to-use community engagement platform designed for Small and Medium Enterprises(SMEs) in Africa.",
+	"is_blog": "false",
+	"blog_type": "",
+	"link_type": "project",
+	"link" : "https://beemathon-jk.herokuapp.com/"
+
+   },
+   {
 	"name" : "XOR",
 	"languages" : "None",
 	"summary" : "An exploration of XOR's meaning, properties, and applications.",
