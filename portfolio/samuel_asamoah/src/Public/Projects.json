@@ -2,7 +2,7 @@
    {
 	"name" : "Conference Manager",
 	"languages" : "React JS",
-	"summary" : "A CRUD based web application that enables conference managers can interact with prospective attendees.",
+	"summary" : "A CRUD based web application that enables conference managers to interact with prospective attendees.",
 	"is_blog": "false",
 	"blog_type": "",
 	"link_type": "project",
